@@ -1,0 +1,12 @@
+streamlit
+gdown
+torch
+torchvision
+torchaudio
+torch-geometric
+numpy
+opencv-python
+mtcnn
+scikit-learn
+pandas
+Pillow
