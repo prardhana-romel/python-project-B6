@@ -10,3 +10,4 @@ mtcnn
 scikit-learn
 pandas
 Pillow
+tensorflow
