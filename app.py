@@ -9,6 +9,15 @@ import torch.nn.functional as F
 from model_definitions import FuNetA
 from my_models import extract_faces_from_video, image_to_graph
 
+import gdown # type: ignore
+
+file_id = '11LU2KYSbooDsVr22fy7q40Y4Cby-xpwZ'
+output = 'funet_a_full.pth'
+
+if not os.path.exists(output):
+    gdown.download(f'https://drive.google.com/uc?id={file_id}', output, quiet=False)
+
+
 # Set Streamlit page config
 st.set_page_config(page_title="Deepfake analyser", layout="wide")
 
